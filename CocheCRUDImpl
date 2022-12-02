@@ -1,0 +1,33 @@
+package poo.ejerciciosInterfaces;
+
+public class CocheCRUDImpl implements CocheCRUD {
+
+    @Override
+    public void save() {
+        System.out.println("save");
+    }
+
+    @Override
+    public void findAll() {
+        System.out.println("findAll");
+    }
+
+    @Override
+    public void delete() {
+
+
+    }
+
+    String save = "save";
+    String findAll = "findAll";
+    String delete = "delete";
+
+    @Override
+    public String toString() {
+        return "CocheCRUDImpl{" +
+                "save='" + save + '\'' +
+                ", findAll='" + findAll + '\'' +
+                ", delete='" + delete + '\'' +
+                '}';
+    }
+}
